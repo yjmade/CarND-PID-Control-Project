@@ -1,5 +1,5 @@
 ## PID implementation
-There are two parameter to be controlled, one is the steering wheel angle, another is the throttle. I have individual PID controller instance to be used for each of the parameters. The steering wheel controller's target is make CTE as close as to 0, and the throttle controller's target is make speed close to a predefined target speed (in my case is 60KM/h)
+There are two parameter to be controlled, one is the steering wheel angle, another is the throttle. I have individual PID controller instance to be used for each of the parameters. The steering wheel controller's target is make CTE as close as to 0, and the throttle controller's target is make speed close to a predefined target speed (in my case is 50KM/h)
 
 
 ## Tuning the PID Parameters
