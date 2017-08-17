@@ -38,12 +38,10 @@ int main()
 
   PID pid;
   PID throttle_pid;
-  double target_speed=60;
+  double target_speed=50;
   // TODO: Initialize the pid variable.
 //  pid.Init(0.3, 0., 6.);
-  pid.Init(0.3,
-           0.0001,
-           6.);
+  pid.Init(0.366776,0.000689087,20.25935);
   throttle_pid.Init(0.1, 0.0001, 1);
 #ifdef DO_TWIDDLE
   int count=0;

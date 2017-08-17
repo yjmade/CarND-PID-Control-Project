@@ -28,9 +28,11 @@ Finally, I set a small value to I, but the effect the hard to inspect visually. 
 
 To get better performances, I implemented twiddle to automatically search for better parameters based on the accumulated squared cross track error, over a fixed number of steps. 
 
+The implementation of twiddle is under the `src/twiddle.cpp` and `src/twiddle.hpp` files. And the invoke of the twiddle class is triggered by a marco in `src/main.cpp` in line 7, by uncomment the define `DO_TWIDDLE`, program will start to do twiddle optimization and restart the simulator also reinitialize the PIDs after 2000 time steps.
+
 First, I started with my manually tuned values for P I D: 0.3, 0.0001, 6.
 I ran twiddle over the first 2000 steps with target speed 60km/h, which enough to make the car go over the last corner.
 
-I got as a result for P I D: 0.666776,0.000689087,4.25935. Which reduce the error for the beginning 180 to 24. 
+I got as a result for P I D: 0.366776,0.000689087,20.25935. Which reduce the error for the beginning 180 to 24. 
 
 
